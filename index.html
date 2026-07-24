@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the personal portfolio of Charlen Baloukjy, a Computer Science graduate from Kutztown University specializing in cybersecurity and offensive security.">
+  <title>Charlen Baloukjy | Portfolio & Projects</title>
+  <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    if (localStorage.getItem('portfolio-theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  </script>
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow">
+    <div class="glow-orb orb-1" id="orb-1"></div>
+    <div class="glow-orb orb-2" id="orb-2"></div>
+    <div class="glow-orb orb-3" id="orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="main-navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>Charlen<span class="logo-dot">.</span>Baloukjy<span class="logo-bracket">/&gt;</span>
+      </a>
+      
+      <div class="nav-menu" id="nav-menu-container">
+        <a href="#hero" class="nav-item active" id="nav-link-hero">Home</a>
+        <a href="#about" class="nav-item" id="nav-link-about">About</a>
+        <a href="#skills" class="nav-item" id="nav-link-skills">Skills</a>
+        <a href="#projects" class="nav-item" id="nav-link-projects">Projects</a>
+        <a href="#contact" class="nav-item" id="nav-link-contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-glow-btn" id="theme-btn" title="Toggle light/dark theme" aria-label="Toggle Theme Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot"></span> Available for new opportunities
+        </div>
+        <h1 class="hero-title" id="hero-heading">
+          Securing systems and <span class="gradient-text">defending code</span> through offensive insight.
+        </h1>
+        <p class="hero-subtitle" id="hero-sub">
+          I am Charlen Baloukjy, a Computer Science graduate from Kutztown University of Pennsylvania. My field of focus is cybersecurity, with a strong emphasis on offensive security and penetration testing.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-graphic">
+        <div class="hero-card-container">
+          <div class="code-card">
+            <div class="card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="card-title">developer_profile.json</span>
+            </div>
+            <pre class="code-editor"><code>{
+  <span class="key">"name"</span>: <span class="str">"Charlen Baloukjy"</span>,
+  <span class="key">"education"</span>: <span class="str">"BS in Computer Science"</span>,
+  <span class="key">"focus"</span>: <span class="str">"Cybersecurity / Pentesting"</span>,
+  <span class="key">"tools"</span>: [
+    <span class="str">"Kali Linux"</span>, <span class="str">"Metasploit"</span>, 
+    <span class="str">"Python"</span>, <span class="str">"Wireshark"</span>
+  ],
+  <span class="key">"coffeeConsumption"</span>: <span class="num">1.5</span> <span class="comment">// Liters/day</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">01. About Me</span>
+        <h2 class="section-title">The mind behind the console.</h2>
+        <div class="header-divider"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="image-border-glow"></div>
+          <div class="about-image-container">
+            <img src="assets/myphoto.jpg" alt="Developer Portrait" class="about-avatar" id="about-avatar-img">
+          </div>
+        </div>
+        
+        <div class="about-details">
+          <h3 class="details-heading">Hello! I'm Charlen Baloukjy.</h3>
+          <p class="details-text">
+            I am a Computer Science graduate from Kutztown University of Pennsylvania with a primary focus in cybersecurity, specifically offensive security and penetration testing. I enjoy analyzing software systems, identifying vulnerabilities, and crafting secure solutions.
+          </p>
+          <p class="details-text">
+            I am passionate about studying security protocols, network traffic analysis, reverse engineering, and defensive architectures. My goal is to build secure applications and defend modern networks from sophisticated threat actors.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="highlight-card" id="highlight-xp">
+              <span class="highlight-number">BS</span>
+              <span class="highlight-label">Computer Science</span>
+            </div>
+            <div class="highlight-card" id="highlight-projects">
+              <span class="highlight-number">Offensive</span>
+              <span class="highlight-label">Security Focus</span>
+            </div>
+            <div class="highlight-card" id="highlight-knowledge">
+              <span class="highlight-number">Secure</span>
+              <span class="highlight-label">Coding & Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Knowledge Section -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">02. Expertise</span>
+        <h2 class="section-title">My Knowledge Landscape.</h2>
+        <div class="header-divider"></div>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="skills-tabs" id="skills-tabs-container">
+        <button class="tab-btn active" data-category="all" id="tab-all">All Expertise</button>
+        <button class="tab-btn" data-category="security" id="tab-security">Cybersecurity & Pentesting</button>
+        <button class="tab-btn" data-category="languages" id="tab-languages">Programming Languages</button>
+        <button class="tab-btn" data-category="tools" id="tab-tools">Tools & Protocols</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid" id="skills-display-grid">
+        <!-- Cybersecurity -->
+        <div class="skill-card" data-category="security" id="skill-pentest">
+          <div class="skill-icon"><i class="fa-solid fa-shield-halved text-red"></i></div>
+          <h3 class="skill-name">Offensive Security & Pentesting</h3>
+          <p class="skill-desc">Reconnaissance, vulnerability assessment, and exploitation in TryHackMe lab environments.</p>
+        </div>
+        
+        <div class="skill-card" data-category="security" id="skill-web-security">
+          <div class="skill-icon"><i class="fa-solid fa-bug text-orange"></i></div>
+          <h3 class="skill-name">Web Application Pentesting</h3>
+          <p class="skill-desc">Assessing and exploiting vulnerabilities in web applications, including OWASP Top 10 vulnerabilities (XSS, SQLi, CSRF).</p>
+        </div>
+
+        <div class="skill-card" data-category="security" id="skill-network-attacks">
+          <div class="skill-icon"><i class="fa-solid fa-network-wired text-purple"></i></div>
+          <h3 class="skill-name">Network Attacks & Analysis</h3>
+          <p class="skill-desc">Analyzing network-level attacks, traffic patterns, and mitigation techniques in virtualized environments.</p>
+        </div>
+
+        <div class="skill-card" data-category="security" id="skill-certs">
+          <div class="skill-icon"><i class="fa-solid fa-certificate text-yellow"></i></div>
+          <h3 class="skill-name">Security Certifications</h3>
+          <p class="skill-desc">TryHackMe Jr Penetration Tester, Web Fundamentals, Web Application Pentesting, and Kutztown Cybersecurity Certificate.</p>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-card" data-category="languages" id="skill-python">
+          <div class="skill-icon"><i class="fa-brands fa-python text-blue"></i></div>
+          <h3 class="skill-name">Python & Scripting</h3>
+          <p class="skill-desc">Developing custom scripting solutions for task automation, exploit testing, and network analysis.</p>
+        </div>
+
+        <div class="skill-card" data-category="languages" id="skill-c">
+          <div class="skill-icon"><i class="fa-solid fa-code text-cyan"></i></div>
+          <h3 class="skill-name">C / C++</h3>
+          <p class="skill-desc">Systems programming, memory management analysis, and structured algorithm design.</p>
+        </div>
+
+        <div class="skill-card" data-category="languages" id="skill-bash">
+          <div class="skill-icon"><i class="fa-solid fa-terminal text-green"></i></div>
+          <h3 class="skill-name">Bash & Linux CLI</h3>
+          <p class="skill-desc">Command-line scripting, server automation, process management, and Linux systems administration.</p>
+        </div>
+
+        <div class="skill-card" data-category="languages" id="skill-js">
+          <div class="skill-icon"><i class="fa-brands fa-js text-orange-yellow"></i></div>
+          <h3 class="skill-name">JavaScript & TypeScript</h3>
+          <p class="skill-desc">Interactive logic, dynamic frontend component structures, and modern web application interfaces.</p>
+        </div>
+
+        <!-- Tools & Protocols -->
+        <div class="skill-card" data-category="tools" id="skill-burp">
+          <div class="skill-icon"><i class="fa-solid fa-user-secret text-magenta"></i></div>
+          <h3 class="skill-name">Burp Suite & Proxy Tools</h3>
+          <p class="skill-desc">Intercepting web requests, manual request tampering, session analysis, and vulnerability fuzzing.</p>
+        </div>
+
+        <div class="skill-card" data-category="tools" id="skill-protocols">
+          <div class="skill-icon"><i class="fa-solid fa-ethernet text-ocean"></i></div>
+          <h3 class="skill-name">TCP/IP & Ports & Protocols</h3>
+          <p class="skill-desc">Analyzing network routing, port scanning, header structures, and packet exchanges (Wireshark).</p>
+        </div>
+
+        <div class="skill-card" data-category="tools" id="skill-git">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt text-red"></i></div>
+          <h3 class="skill-name">Git Version Control</h3>
+          <p class="skill-desc">Version control management, repository setups, branch checkouts, and GitHub collaboration logs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">03. Portfolio</span>
+        <h2 class="section-title">Selected Projects.</h2>
+        <div class="header-divider"></div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" id="project-labs-ctfs">
+          <div class="project-image-wrapper">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Cybersecurity</div>
+            <div class="project-icon-placeholder">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">TryHackMe Labs & CTFs</h3>
+            <p class="project-desc">
+              Performing guided lab assessments and capture-the-flag (CTF) security challenges simulating real-world attack scenarios, discovering network vulnerabilities, and creating structured CTF walkthrough write-ups.
+            </p>
+            <div class="project-tags">
+              <span>Pentesting</span>
+              <span>Reconnaissance</span>
+              <span>Exploitation</span>
+              <span>OWASP Top 10</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/CharlenB/TryHackMe-Writeups" target="_blank" class="project-link" aria-label="View CTF Writeups on GitHub"><i class="fa-brands fa-github"></i> Writeups</a>
+              <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="project-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" id="project-ecosmart">
+          <div class="project-image-wrapper">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Full-Stack IoT</div>
+            <div class="project-icon-placeholder">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">EcoSmart System</h3>
+            <p class="project-desc">
+              Led a team of 5 to develop a smart environmental monitoring system. Coordinated frontend client dashboards, backend databases, and IoT hardware components. Implemented clean APIs and responsive UI boards.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Supabase</span>
+              <span>Vercel</span>
+              <span>IoT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/CharlenB" target="_blank" class="project-link" aria-label="View EcoSmart Source Code"><i class="fa-brands fa-github"></i> Source</a>
+              <a href="https://github.com/CharlenB" target="_blank" class="project-link" aria-label="View EcoSmart Details"><i class="fa-solid fa-arrow-up-right-from-square"></i> Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" id="project-network-labs">
+          <div class="project-image-wrapper">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Kutztown Univ</div>
+            <div class="project-icon-placeholder">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Secure Socket Programming</h3>
+            <p class="project-desc">
+              Coursework network programming projects covering secure client-server socket tunnels, custom shell commands, cryptographic hashing layers, access management systems, and basic relational databases.
+            </p>
+            <div class="project-tags">
+              <span>C / C++</span>
+              <span>Python</span>
+              <span>Sockets</span>
+              <span>DBMS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/CharlenB" target="_blank" class="project-link" aria-label="View Network Labs Source Code"><i class="fa-brands fa-github"></i> Codebase</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">04. Connection</span>
+        <h2 class="section-title">Get in touch.</h2>
+        <div class="header-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 class="info-heading">Let's discuss a project!</h3>
+          <p class="info-text">
+            I'm always excited about joining innovative projects, designing rich websites, or helping to engineer robust software architectures. Send me a message, and let's build something exceptional.
+          </p>
+          
+          <div class="info-links">
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:charlenbaloukjy@outlook.com" id="email-link">charlenbaloukjy@outlook.com</a>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Catasauqua, PA</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/charlenbaloukjy" target="_blank" aria-label="LinkedIn Profile" class="social-icon" id="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/CharlenB" target="_blank" aria-label="GitHub Profile" class="social-icon" id="social-github"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form" id="portfolio-contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="contact-name" name="name" required placeholder=" " class="form-input">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <span class="error-msg" id="name-error">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="contact-email" name="email" required placeholder=" " class="form-input">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <textarea id="contact-message" name="message" required placeholder=" " class="form-input text-area"></textarea>
+              <label for="contact-message" class="form-label">Message</label>
+              <span class="error-msg" id="message-error">Please write a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-status" id="form-status-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="copyright">&copy; 2026 Charlen Baloukjy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
