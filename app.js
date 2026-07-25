@@ -252,14 +252,38 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtnIcon.className = 'fa-solid fa-circle-notch fa-spin';
     formStatus.textContent = '';
 
-    setTimeout(() => {
+    const nameVal = document.getElementById('contact-name').value.trim();
+    const emailVal = document.getElementById('contact-email').value.trim();
+    const messageVal = document.getElementById('contact-message').value.trim();
+
+    fetch("https://formsubmit.co/ajax/charlenbaloukjy@outlook.com", {
+      method: "POST",
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: nameVal,
+        email: emailVal,
+        message: messageVal,
+        _subject: `New Portfolio Message from ${nameVal}`
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Failed to send message.');
+      }
+    })
+    .then(data => {
       // Reset button
       submitBtn.disabled = false;
       submitBtnText.textContent = originalText;
       submitBtnIcon.className = originalIconClass;
 
-      // Show success
-      formStatus.textContent = 'Thank you Charlen Baloukjy! Your message has been sent successfully.';
+      // Show success thanking the visitor
+      formStatus.textContent = `Thank you ${nameVal}! Your message has been sent successfully.`;
       formStatus.className = 'form-status success';
 
       // Clear input fields
@@ -270,8 +294,17 @@ document.addEventListener('DOMContentLoaded', () => {
         formStatus.textContent = '';
         formStatus.className = 'form-status';
       }, 5000);
+    })
+    .catch(error => {
+      // Reset button
+      submitBtn.disabled = false;
+      submitBtnText.textContent = originalText;
+      submitBtnIcon.className = originalIconClass;
 
-    }, 1500);
+      // Show error
+      formStatus.textContent = 'Oops! There was an issue sending your message. Please try again or email directly.';
+      formStatus.className = 'form-status error';
+    });
 
   });
 
