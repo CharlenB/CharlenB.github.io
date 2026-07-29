@@ -8,11 +8,11 @@
   <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 <body>
   <script>
@@ -40,6 +40,7 @@
         <a href="#about" class="nav-item" id="nav-link-about">About</a>
         <a href="#skills" class="nav-item" id="nav-link-skills">Skills</a>
         <a href="#projects" class="nav-item" id="nav-link-projects">Projects</a>
+        <a href="#certificates" class="nav-item" id="nav-link-certificates">Certificates</a>
         <a href="#contact" class="nav-item" id="nav-link-contact">Contact</a>
       </div>
 
@@ -65,7 +66,7 @@
           Securing systems and <span class="gradient-text">defending code</span> through offensive insight.
         </h1>
         <p class="hero-subtitle" id="hero-sub">
-          I am Charlen Baloukjy, a Computer Science graduate from Kutztown University of Pennsylvania. My field of focus is cybersecurity, with a strong emphasis on offensive security and penetration testing.
+          I am Charlen Baloukjy, a Computer Science graduate from Kutztown University of Pennsylvania. I combine a strong foundation in cybersecurity, penetration testing, and software & web development.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
@@ -120,10 +121,10 @@
         <div class="about-details">
           <h3 class="details-heading">Hello! I'm Charlen Baloukjy.</h3>
           <p class="details-text">
-            I am a Computer Science graduate from Kutztown University of Pennsylvania with a primary focus in cybersecurity, specifically offensive security and penetration testing. I enjoy analyzing software systems, identifying vulnerabilities, and crafting secure solutions.
+            I am a Computer Science graduate from Kutztown University of Pennsylvania with a primary focus in cybersecurity, offensive security, and penetration testing. Beyond technical analysis, I bring valuable experience in sales, team management, and client relations, allowing me to easily translate complex security issues into clear business impacts.
           </p>
           <p class="details-text">
-            I am passionate about studying security protocols, network traffic analysis, reverse engineering, and defensive architectures. My goal is to build secure applications and defend modern networks from sophisticated threat actors.
+            As a bilingual communicator who has successfully coordinated project teams, I am passionate about securing software systems while maintaining positive client relationships. My goal is to leverage both my technical security skills and business experience in a security analyst or consulting role.
           </p>
           
           <div class="about-highlights">
@@ -232,6 +233,12 @@
           <h3 class="skill-name">Git Version Control</h3>
           <p class="skill-desc">Version control management, repository setups, branch checkouts, and GitHub collaboration logs.</p>
         </div>
+
+        <div class="skill-card" data-category="tools" id="skill-ai">
+          <div class="skill-icon"><i class="fa-solid fa-brain text-purple"></i></div>
+          <h3 class="skill-name">Artificial Intelligence</h3>
+          <p class="skill-desc">Developing intelligent systems, neural networks, machine learning models, and integrating generative AI frameworks and agentic workflows.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -320,6 +327,156 @@
             </div>
           </div>
         </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" id="project-najem-contracting">
+          <div class="project-image-wrapper">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Web Development</div>
+            <div class="project-icon-placeholder">
+              <i class="fa-solid fa-helmet-safety"></i>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Najem Contracting Website</h3>
+            <p class="project-desc">
+              Designed and developed a premium business website for a contracting and landscaping firm. Features include an interactive portfolio filter, a dynamic testimonial system backed by local storage, local SEO optimization with Google Schema markup, and secure AJAX contact form submission.
+            </p>
+            <div class="project-tags">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>Local SEO</span>
+              <span>Netlify</span>
+              <span>UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/CharlenB/najem-contracting" target="_blank" class="project-link" aria-label="View Najem Contracting on GitHub"><i class="fa-brands fa-github"></i> Repository</a>
+              <a href="https://najemcontracting.netlify.app" target="_blank" class="project-link" aria-label="View Najem Contracting Live Site"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" id="project-protecht-av">
+          <div class="project-image-wrapper">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Cybersecurity / macOS</div>
+            <div class="project-icon-placeholder">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">ProTecht AV</h3>
+            <p class="project-desc">
+              Developed a hybrid desktop antivirus scanner for macOS. Pairs a native SwiftUI desktop interface wrapper with a background Node.js daemon. Implements real-time directory shields (via Chokidar), ransomware protection, signature-based threat detection (MD5/SHA256 signature matching), quarantine management, and dynamic launch configurations via plist LaunchAgents.
+            </p>
+            <div class="project-tags">
+              <span>SwiftUI</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Socket.io</span>
+              <span>Chokidar</span>
+              <span>macOS API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates-section" id="certificates">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">04. Credentials</span>
+        <h2 class="section-title">Certifications & Achievements.</h2>
+        <div class="header-divider"></div>
+      </div>
+
+      <div class="certificates-grid">
+        <!-- Cert 1 -->
+        <div class="certificate-card" id="cert-jr-pentester">
+          <div class="cert-icon-wrapper">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <span class="cert-issuer">TryHackMe</span>
+          <h3 class="cert-title">Jr Penetration Tester</h3>
+          <div class="cert-details">
+            <ul>
+              <li>Pentesting methodologies</li>
+              <li>Network security & scanning</li>
+              <li>Web application hacking</li>
+              <li>Privilege escalation (Windows/Linux)</li>
+            </ul>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date">Credential Verified</span>
+            <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="certificate-card" id="cert-web-fundamentals">
+          <div class="cert-icon-wrapper">
+            <i class="fa-solid fa-bug"></i>
+          </div>
+          <span class="cert-issuer">TryHackMe</span>
+          <h3 class="cert-title">Web Fundamentals</h3>
+          <div class="cert-details">
+            <ul>
+              <li>Web request tampering & proxies</li>
+              <li>OWASP Top 10 vulnerabilities</li>
+              <li>Server-side & client-side bugs</li>
+              <li>Authentication & session bypass</li>
+            </ul>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date">Credential Verified</span>
+            <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="certificate-card" id="cert-web-pentesting">
+          <div class="cert-icon-wrapper">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <span class="cert-issuer">TryHackMe</span>
+          <h3 class="cert-title">Web App Pentesting</h3>
+          <div class="cert-details">
+            <ul>
+              <li>SQL injection & XSS exploits</li>
+              <li>CSRF & IDOR vulnerabilities</li>
+              <li>API security & endpoints fuzzing</li>
+              <li>Exploit scripting and automation</li>
+            </ul>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date">Credential Verified</span>
+            <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="certificate-card" id="cert-ku-cyber">
+          <div class="cert-icon-wrapper">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <span class="cert-issuer">Kutztown University</span>
+          <h3 class="cert-title">Cybersecurity Certificate</h3>
+          <div class="cert-details">
+            <ul>
+              <li>Secure systems engineering</li>
+              <li>Network defense & monitoring</li>
+              <li>Computer forensics & incident</li>
+              <li>Cryptographic algorithm design</li>
+            </ul>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-date">University Program</span>
+            <span class="cert-link"><i class="fa-solid fa-certificate"></i> KU CS Program</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -328,7 +485,7 @@
   <section class="contact-section" id="contact">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">04. Connection</span>
+        <span class="section-tag">05. Connection</span>
         <h2 class="section-title">Get in touch.</h2>
         <div class="header-divider"></div>
       </div>
