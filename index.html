@@ -338,7 +338,7 @@
           <div class="project-details">
             <h3 class="project-title">Najem Contracting Website</h3>
             <p class="project-desc">
-              Designed and developed a premium business website for a contracting and landscaping firm. Features include an interactive portfolio filter, a dynamic testimonial system backed by local storage, local SEO optimization with Google Schema markup, and secure AJAX contact form submission.
+              Designed and developed a premium business website for a contracting and landscaping firm. Security-hardened with a strict Content Security Policy (CSP), anti-clickjacking headers, HSTS, and referrer policies. Implemented secure DOM manipulation to prevent XSS, validated local storage inputs, and set up client-side form regex sanitization.
             </p>
             <div class="project-tags">
               <span>HTML5 / CSS3</span>
@@ -346,6 +346,7 @@
               <span>Local SEO</span>
               <span>Netlify</span>
               <span>UI/UX</span>
+              <span>Security Hardening</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/CharlenB/najem-contracting" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Najem Contracting on GitHub"><i class="fa-brands fa-github"></i> Repository</a>
@@ -366,7 +367,7 @@
           <div class="project-details">
             <h3 class="project-title">ProTecht AV</h3>
             <p class="project-desc">
-              Developed a hybrid desktop antivirus scanner for macOS. Pairs a native SwiftUI desktop interface wrapper with a background Node.js daemon. Implements real-time directory shields (via Chokidar), ransomware protection, signature-based threat detection (MD5/SHA256 signature matching), quarantine management, and dynamic launch configurations via plist LaunchAgents.
+              Developed a hybrid desktop antivirus scanner for macOS pairing a native SwiftUI interface with a background Node.js daemon. Hardened against system-level exploits by remediating OS Command Injection vulnerabilities using parameter-safe execution, and resolving quarantine path traversal using strict boundary verification.
             </p>
             <div class="project-tags">
               <span>SwiftUI</span>
@@ -375,6 +376,7 @@
               <span>Socket.io</span>
               <span>Chokidar</span>
               <span>macOS API</span>
+              <span>Security Hardened</span>
             </div>
           </div>
         </div>
@@ -391,7 +393,7 @@
           <div class="project-details">
             <h3 class="project-title">SecryptVault</h3>
             <p class="project-desc">
-              A production-quality, local cryptographic vault application featuring zero-knowledge architecture, master password authentication, and AES-256-GCM data encryption. Derives keys using Argon2id, generates passwords, logs activities securely, and supports backup exports—complete with a dual-mode local API / client-side standalone execution fallback.
+              A production-quality, local cryptographic vault application featuring zero-knowledge architecture, master password authentication, and AES-256-GCM data encryption. Derives keys using Argon2id. Hardened against web attack vectors with a strict Content Security Policy (CSP), anti-clickjacking headers, and OWASP-aligned script execution.
             </p>
             <div class="project-tags">
               <span>React</span>
@@ -400,6 +402,7 @@
               <span>AES-256-GCM</span>
               <span>Zero-Knowledge</span>
               <span>Express</span>
+              <span>OWASP Compliant</span>
             </div>
             <div class="project-links">
               <a href="./secryptVault/index.html" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open SecryptVault Live Demo"><i class="fa-solid fa-play"></i> Live Demo</a>
