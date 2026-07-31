@@ -252,9 +252,22 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtnIcon.className = 'fa-solid fa-circle-notch fa-spin';
     formStatus.textContent = '';
 
-    const nameVal = document.getElementById('contact-name').value.trim();
-    const emailVal = document.getElementById('contact-email').value.trim();
-    const messageVal = document.getElementById('contact-message').value.trim();
+    // HTML Sanitization utility to prevent script and tag injection (Defense-in-Depth)
+    const escapeHTML = (str) => {
+      return str.replace(/[&<>'"]/g, 
+        tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag)
+      );
+    };
+
+    const nameVal = escapeHTML(document.getElementById('contact-name').value.trim());
+    const emailVal = escapeHTML(document.getElementById('contact-email').value.trim());
+    const messageVal = escapeHTML(document.getElementById('contact-message').value.trim());
 
     fetch("https://formsubmit.co/ajax/charlenbaloukjy@outlook.com", {
       method: "POST",

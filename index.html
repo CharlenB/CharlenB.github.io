@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-ancestors 'none'; form-action 'self' https://formsubmit.co;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore the personal portfolio of Charlen Baloukjy, a Computer Science graduate from Kutztown University specializing in cybersecurity and offensive security.">
   <title>Charlen Baloukjy | Portfolio & Projects</title>
@@ -15,11 +17,7 @@
   <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 <body>
-  <script>
-    if (localStorage.getItem('portfolio-theme') === 'light') {
-      document.body.classList.add('light-mode');
-    }
-  </script>
+  <script src="theme-init.js"></script>
 
   <!-- Ambient background glow elements -->
   <div class="ambient-glow">
@@ -275,8 +273,8 @@
               <span>OWASP Top 10</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/CharlenB/TryHackMe-Writeups" target="_blank" class="project-link" aria-label="View CTF Writeups on GitHub"><i class="fa-brands fa-github"></i> Writeups</a>
-              <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="project-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+              <a href="https://github.com/CharlenB/TryHackMe-Writeups" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View CTF Writeups on GitHub"><i class="fa-brands fa-github"></i> Writeups</a>
+              <a href="https://tryhackme.com/p/CharlenB" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
             </div>
           </div>
         </div>
@@ -350,8 +348,8 @@
               <span>UI/UX</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/CharlenB/najem-contracting" target="_blank" class="project-link" aria-label="View Najem Contracting on GitHub"><i class="fa-brands fa-github"></i> Repository</a>
-              <a href="https://najemcontracting.netlify.app" target="_blank" class="project-link" aria-label="View Najem Contracting Live Site"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
+              <a href="https://github.com/CharlenB/najem-contracting" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Najem Contracting on GitHub"><i class="fa-brands fa-github"></i> Repository</a>
+              <a href="https://najemcontracting.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Najem Contracting Live Site"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
             </div>
           </div>
         </div>
@@ -404,8 +402,8 @@
               <span>Express</span>
             </div>
             <div class="project-links">
-              <a href="./secryptVault/index.html" target="_blank" class="project-link" aria-label="Open SecryptVault Live Demo"><i class="fa-solid fa-play"></i> Live Demo</a>
-              <a href="https://github.com/CharlenB/secryptVault" target="_blank" class="project-link" aria-label="View SecryptVault Repository"><i class="fa-brands fa-github"></i> Repository</a>
+              <a href="./secryptVault/index.html" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open SecryptVault Live Demo"><i class="fa-solid fa-play"></i> Live Demo</a>
+              <a href="https://github.com/CharlenB/secryptVault" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View SecryptVault Repository"><i class="fa-brands fa-github"></i> Repository</a>
             </div>
           </div>
         </div>
@@ -440,7 +438,7 @@
           </div>
           <div class="cert-footer">
             <span class="cert-date">Credential Verified</span>
-            <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+            <a href="https://tryhackme.com/p/CharlenB" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
           </div>
         </div>
 
@@ -461,7 +459,7 @@
           </div>
           <div class="cert-footer">
             <span class="cert-date">Credential Verified</span>
-            <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+            <a href="https://tryhackme.com/p/CharlenB" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
           </div>
         </div>
 
@@ -482,7 +480,7 @@
           </div>
           <div class="cert-footer">
             <span class="cert-date">Credential Verified</span>
-            <a href="https://tryhackme.com/p/CharlenB" target="_blank" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+            <a href="https://tryhackme.com/p/CharlenB" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View TryHackMe Profile"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
           </div>
         </div>
 
@@ -538,8 +536,8 @@
           </div>
 
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/charlenbaloukjy" target="_blank" aria-label="LinkedIn Profile" class="social-icon" id="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/CharlenB" target="_blank" aria-label="GitHub Profile" class="social-icon" id="social-github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/charlenbaloukjy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon" id="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/CharlenB" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon" id="social-github"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
 
