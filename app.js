@@ -269,21 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailVal = escapeHTML(document.getElementById('contact-email').value.trim());
     const messageVal = escapeHTML(document.getElementById('contact-message').value.trim());
 
-    // Honeypot field validation (Defense-in-Depth against bot spam)
-    const honeyVal = document.getElementById('contact-honey').value;
-    if (honeyVal) {
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtnText.textContent = originalText;
-        submitBtnIcon.className = originalIconClass;
-        
-        formStatus.className = 'form-status success';
-        formStatus.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.';
-        contactForm.reset();
-      }, 1000);
-      return;
-    }
-
     fetch("https://formsubmit.co/ajax/charlenbaloukjy@outlook.com", {
       method: "POST",
       headers: { 
