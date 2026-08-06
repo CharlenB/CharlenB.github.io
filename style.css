@@ -137,6 +137,22 @@ body.light-mode .project-badge {
   border-color: rgba(15, 23, 42, 0.12);
 }
 
+body.light-mode .project-status-badge {
+  background: rgba(217, 119, 6, 0.12);
+  border-color: rgba(217, 119, 6, 0.3);
+  color: #b45309;
+}
+
+body.light-mode .underway-pill {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #b45309;
+}
+
+body.light-mode .project-status-text {
+  color: #b45309;
+}
+
 body.light-mode .theme-glow-btn:hover {
   box-shadow: 0 0 15px rgba(217, 119, 6, 0.3);
 }
@@ -889,6 +905,63 @@ li {
   border-radius: 20px;
   z-index: 2;
   font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.project-status-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  z-index: 2;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.project-status-badge .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fbbf24;
+  box-shadow: 0 0 8px #fbbf24;
+  animation: pulseDot 1.8s infinite;
+}
+
+.status-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  vertical-align: middle;
+  letter-spacing: 0.3px;
+}
+
+.underway-pill {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+}
+
+.project-status-text {
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 500;
 }
 
