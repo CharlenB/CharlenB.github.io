@@ -119,8 +119,45 @@ body.theme-transition *::after {
 }
 
 body.light-mode .code-card {
-  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.1);
-  border-color: rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(15, 23, 42, 0.05);
+}
+
+body.light-mode .code-card .card-header {
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light-mode .code-card .card-title {
+  color: #475569;
+}
+
+body.light-mode .code-card .code-editor {
+  color: #0f172a;
+}
+
+body.light-mode .code-card .key {
+  color: #c2410c;
+  font-weight: 600;
+}
+
+body.light-mode .code-card .str {
+  color: #047857;
+}
+
+body.light-mode .code-card .num {
+  color: #be123c;
+  font-weight: 600;
+}
+
+body.light-mode .code-card .comment {
+  color: #64748b;
+  font-style: italic;
+}
+
+body.light-mode .code-card:hover {
+  box-shadow: 0 0 25px rgba(217, 119, 6, 0.25), 0 20px 40px -10px rgba(15, 23, 42, 0.15);
+  border-color: rgba(217, 119, 6, 0.4);
 }
 
 body.light-mode .project-image-wrapper {
@@ -606,19 +643,20 @@ li {
 .dot.green { background-color: #10b981; }
 
 .card-title {
-  color: var(--text-dark);
+  color: #94a3b8;
   font-size: 0.75rem;
   margin-left: 8px;
 }
 
 .code-editor {
   line-height: 1.7;
+  color: #e2e8f0;
 }
 
 .key { color: #f472b6; }
 .str { color: #34d399; }
 .num { color: #fb7185; }
-.comment { color: var(--text-dark); }
+.comment { color: #94a3b8; }
 
 /* ==========================================================================
    ABOUT ME SECTION
@@ -663,10 +701,11 @@ li {
 
 .about-avatar {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 5;
   border-radius: 12px;
   display: block;
   object-fit: cover;
+  object-position: center 15%;
   transition: transform var(--transition-normal) ease;
 }
 

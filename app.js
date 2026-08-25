@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeBtn = document.getElementById('theme-btn');
   const orbs = document.querySelectorAll('.glow-orb');
 
-  // Load theme preference
-  const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+  // Load theme preference (defaults to light mode on first visit)
+  const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
   if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
     const icon = themeBtn.querySelector('i');
@@ -132,6 +132,14 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.classList.add('fa-sun');
     }
     themeBtn.style.color = '#fbbf24';
+  } else {
+    document.body.classList.remove('light-mode');
+    const icon = themeBtn.querySelector('i');
+    if (icon) {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    }
+    themeBtn.style.color = '';
   }
 
   const toggleThemeMode = () => {
