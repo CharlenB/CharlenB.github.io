@@ -1242,6 +1242,28 @@ span.cert-link {
   cursor: default;
 }
 
+.cert-date.planned-badge {
+  color: var(--accent-gold);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cert-status-tag {
+  font-size: 0.78rem;
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* ==========================================================================
    CONTACT SECTION
    ========================================================================== */
