@@ -2,11 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-ancestors 'none'; form-action 'self' https://formsubmit.co;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://formsubmit.co; frame-ancestors 'none'; form-action 'self' https://formsubmit.co;">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the personal portfolio of Charlen Baloukjy, a Computer Science graduate from Kutztown University specializing in cybersecurity and offensive security.">
-  <title>Charlen Baloukjy | Portfolio & Projects</title>
+  <meta name="author" content="Charlen Baloukjy">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="description" content="Charlen Baloukjy is a freelance cybersecurity specialist, penetration tester, and full-stack software & web developer available for freelance security audits, web development, and custom software applications.">
+  <meta name="keywords" content="Charlen Baloukjy, Freelance Web Developer, Freelance Cybersecurity, Penetration Testing Freelancer, Security Auditor, Freelance Software Engineer, Full Stack Web Development, OWASP Pentesting, Security Hardening, Kutztown University">
+  <link rel="canonical" href="https://charlenb.github.io/">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Charlen Baloukjy | Freelance Cybersecurity Specialist & Full-Stack Developer">
+  <meta property="og:description" content="Freelance cybersecurity specialist, penetration tester, and full-stack web developer. Available for freelance security audits, pentesting, and modern web application development.">
+  <meta property="og:url" content="https://charlenb.github.io/">
+  <meta property="og:site_name" content="Charlen Baloukjy Portfolio">
+  <meta property="og:image" content="https://charlenb.github.io/assets/myphoto.jpg">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Charlen Baloukjy | Freelance Cybersecurity & Web Developer">
+  <meta name="twitter:description" content="Freelance cybersecurity specialist and full-stack developer available for freelance web development, security audits, and penetration testing.">
+  <meta name="twitter:image" content="https://charlenb.github.io/assets/myphoto.jpg">
+
+  <title>Charlen Baloukjy | Freelance Cybersecurity Specialist & Full-Stack Developer</title>
+
+  <!-- Structured Data / JSON-LD for Search Engine Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://charlenb.github.io/#person",
+        "name": "Charlen Baloukjy",
+        "jobTitle": ["Freelance Cybersecurity Specialist", "Freelance Web Developer", "Software Engineer"],
+        "url": "https://charlenb.github.io/",
+        "image": "https://charlenb.github.io/assets/myphoto.jpg",
+        "email": "mailto:charlenbaloukjy@outlook.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Catasauqua",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Kutztown University of Pennsylvania"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/charlenbaloukjy",
+          "https://github.com/CharlenB",
+          "https://tryhackme.com/p/CharlenB"
+        ],
+        "knowsAbout": [
+          "Freelance Web Development",
+          "Cybersecurity",
+          "Penetration Testing",
+          "Web Application Pentesting",
+          "Full-Stack Web Development",
+          "JavaScript",
+          "Python",
+          "C/C++",
+          "Network Security",
+          "Security Hardening"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://charlenb.github.io/#service",
+        "name": "Charlen Baloukjy - Freelance Cybersecurity & Web Development",
+        "url": "https://charlenb.github.io/",
+        "image": "https://charlenb.github.io/assets/myphoto.jpg",
+        "telecom": "mailto:charlenbaloukjy@outlook.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Catasauqua",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "areaServed": "Worldwide",
+        "description": "Freelance web development, full-stack application engineering, penetration testing, and web application security auditing services."
+      }
+    ]
+  }
+  </script>
+
   <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +97,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=1.2">
+  <link rel="stylesheet" href="style.css?v=1.3">
 </head>
 <body>
   <script src="theme-init.js"></script>
@@ -36,6 +119,7 @@
       <div class="nav-menu" id="nav-menu-container">
         <a href="#hero" class="nav-item active" id="nav-link-hero">Home</a>
         <a href="#about" class="nav-item" id="nav-link-about">About</a>
+        <a href="#services" class="nav-item" id="nav-link-services">Services</a>
         <a href="#skills" class="nav-item" id="nav-link-skills">Skills</a>
         <a href="#projects" class="nav-item" id="nav-link-projects">Projects</a>
         <a href="#certificates" class="nav-item" id="nav-link-certificates">Certificates</a>
@@ -58,13 +142,13 @@
     <div class="hero-container">
       <div class="hero-content">
         <div class="hero-badge" id="hero-badge">
-          <span class="badge-dot"></span> Available for new opportunities
+          <span class="badge-dot"></span> Available for Freelance & Contract Projects
         </div>
         <h1 class="hero-title" id="hero-heading">
-          Securing systems and <span class="gradient-text">defending code</span> through offensive insight.
+          Freelance Cybersecurity Specialist & <span class="gradient-text">Full-Stack Developer</span>
         </h1>
         <p class="hero-subtitle" id="hero-sub">
-          I am Charlen Baloukjy, a Computer Science graduate from Kutztown University of Pennsylvania. I combine a strong foundation in cybersecurity, penetration testing, and software & web development.
+          I am Charlen Baloukjy, a Computer Science graduate and Freelance Specialist. I build modern, high-performance web applications and perform cybersecurity assessments to secure systems against offensive threats.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
@@ -85,13 +169,13 @@
             </div>
             <pre class="code-editor"><code>{
   <span class="key">"name"</span>: <span class="str">"Charlen Baloukjy"</span>,
+  <span class="key">"role"</span>: <span class="str">"Freelance Engineer"</span>,
   <span class="key">"education"</span>: <span class="str">"BS in Computer Science"</span>,
-  <span class="key">"focus"</span>: <span class="str">"Cybersecurity / Pentesting"</span>,
-  <span class="key">"tools"</span>: [
-    <span class="str">"Kali Linux"</span>, <span class="str">"Metasploit"</span>, 
-    <span class="str">"Python"</span>, <span class="str">"Wireshark"</span>
+  <span class="key">"services"</span>: [
+    <span class="str">"Web Development"</span>, <span class="str">"Pentesting"</span>, 
+    <span class="str">"Security Auditing"</span>
   ],
-  <span class="key">"coffeeConsumption"</span>: <span class="num">1.5</span> <span class="comment">// Liters/day</span>
+  <span class="key">"availability"</span>: <span class="str">"Open for Freelance / Contract"</span>
 }</code></pre>
           </div>
         </div>
@@ -112,18 +196,91 @@
         <div class="about-image-wrapper">
           <div class="image-border-glow"></div>
           <div class="about-image-container">
-            <img src="assets/myphoto.jpg" alt="Charlen Baloukjy - Cybersecurity Analyst" class="about-avatar" id="about-avatar-img">
+            <img src="assets/myphoto.jpg" alt="Charlen Baloukjy - Freelance Cybersecurity Specialist & Web Developer" class="about-avatar" id="about-avatar-img">
           </div>
         </div>
         
         <div class="about-details">
           <h3 class="details-heading">Hello! I'm Charlen Baloukjy.</h3>
           <p class="details-text">
-            I am a Computer Science graduate from Kutztown University of Pennsylvania specializing in software engineering, full-stack web development, and cybersecurity. My technical foundation spans building modern web applications, designing scalable backend systems, socket programming, network analysis, and secure code architecture. I am passionate about crafting clean, efficient code, building responsive user interfaces, and ensuring applications are built securely from the ground up.
+            I am a Computer Science graduate from Kutztown University of Pennsylvania working as a freelance cybersecurity analyst, penetration tester, and full-stack software & web developer. My technical foundation spans building modern web applications, designing scalable backend systems, socket programming, network analysis, and secure code architecture. I am passionate about crafting clean, efficient code, building responsive user interfaces, and ensuring client applications are built securely from the ground up.
           </p>
           <p class="details-text">
-            With hands-on experience developing full-stack web applications, client dashboards, IoT systems, and security analysis tools, I bridge the gap between software engineering and cybersecurity. I thrive on dissecting complex software infrastructure, engineering performant web solutions, and applying robust defense-in-depth principles across the entire application lifecycle.
+            Whether delivering custom client websites, performing web application security audits, or developing bespoke software tools, I bridge the gap between software engineering and cybersecurity. I offer freelance and contract services designed to scale your business, harden your digital infrastructure, and protect your web applications against modern threat vectors.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Offered (Freelance Services) Section -->
+  <section class="services-section" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">02. Services</span>
+        <h2 class="section-title">Freelance Services Offered.</h2>
+        <div class="header-divider"></div>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card" id="service-web-dev">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <span class="service-badge">Web & UI/UX</span>
+          </div>
+          <h3 class="service-title">Freelance Web Development</h3>
+          <p class="service-desc">
+            Custom, responsive full-stack web application development tailored for businesses and individual clients. Built with modern JavaScript/TypeScript, clean CSS layout architecture, fast page load speeds, and built-in SEO optimization.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Custom Single & Multi-Page Apps</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Responsive & Mobile-First UI/UX</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Search Engine Optimization (SEO)</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Fast Load Speed & High Performance</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card" id="service-cyber-audit">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <span class="service-badge">Security & Defense</span>
+          </div>
+          <h3 class="service-title">Cybersecurity & Pentesting Audits</h3>
+          <p class="service-desc">
+            Comprehensive penetration testing and web application vulnerability assessments. Identifying OWASP Top 10 flaws, analyzing network request security, and implementing defense-in-depth security hardening.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> OWASP Top 10 Vulnerability Scanning</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Security Policy & Header Hardening (CSP, HSTS)</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> XSS, SQLi & Auth Bypass Protection</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Actionable Remediation Reports</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card" id="service-software-eng">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <span class="service-badge">Custom Engineering</span>
+          </div>
+          <h3 class="service-title">Custom Software Engineering</h3>
+          <p class="service-desc">
+            Bespoke backend APIs, automation scripting, systems programming, and cryptographic key management integrations designed to solve specific operational requirements and streamline digital workflows.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Python & Bash Automation Scripts</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Secure Socket & API Integrations</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Zero-Knowledge Encryption Utilities</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> AI Agent & Generative AI Integration</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -133,7 +290,7 @@
   <section class="skills-section" id="skills">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">02. Expertise</span>
+        <span class="section-tag">03. Expertise</span>
         <h2 class="section-title">My Knowledge Landscape.</h2>
         <div class="header-divider"></div>
       </div>
@@ -230,7 +387,7 @@
   <section class="projects-section" id="projects">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">03. Portfolio</span>
+        <span class="section-tag">04. Portfolio</span>
         <h2 class="section-title">Selected Projects.</h2>
         <div class="header-divider"></div>
       </div>
@@ -402,7 +559,7 @@
   <section class="certificates-section" id="certificates">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">04. Credentials</span>
+        <span class="section-tag">05. Credentials</span>
         <h2 class="section-title">Certifications & Achievements.</h2>
         <div class="header-divider"></div>
       </div>
@@ -499,7 +656,7 @@
   <section class="contact-section" id="contact">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">05. Connection</span>
+        <span class="section-tag">06. Connection</span>
         <h2 class="section-title">Get in touch.</h2>
         <div class="header-divider"></div>
       </div>
@@ -508,7 +665,7 @@
         <div class="contact-info">
           <h3 class="info-heading">Let's connect!</h3>
           <p class="info-text">
-            Whether you have a new project, a technical challenge, a web development initiative, a security assessment, or just want to explore potential opportunities, I'm open to discussing almost any project or collaboration. Send me a message and let's chat!
+            Looking for a freelance web developer, cybersecurity specialist, or custom software engineer for your next project or contract? Whether you need a new web application, a security audit, or technical consultation, I'm ready to collaborate. Send a message and let's discuss how we can work together!
           </p>
           
           <div class="info-links">
