@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Host
+Host: https://charlenb.github.io
+
+# Sitemap
 Sitemap: https://charlenb.github.io/sitemap.xml
