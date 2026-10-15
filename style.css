@@ -194,6 +194,29 @@ body.light-mode .theme-glow-btn:hover {
   box-shadow: 0 0 15px rgba(217, 119, 6, 0.3);
 }
 
+body.light-mode .nav-resume-btn {
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--accent-teal);
+  border-color: rgba(13, 148, 136, 0.3);
+}
+
+body.light-mode .nav-resume-btn:hover {
+  color: #ffffff;
+}
+
+body.light-mode .hero-stat-pill {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(15, 23, 42, 0.1);
+  color: var(--text-main);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+body.light-mode .cert-status-tag.verified {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #047857;
+}
+
 /* ==========================================================================
    UNIVERSAL RESET & GENERAL SETUP
    ========================================================================== */
@@ -496,6 +519,30 @@ li {
   gap: 16px;
 }
 
+.nav-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: rgba(20, 184, 166, 0.1);
+  color: var(--accent-teal);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.nav-resume-btn:hover {
+  background: var(--grad-primary);
+  color: var(--bg-primary);
+  border-color: transparent;
+  box-shadow: var(--glow-teal);
+  transform: translateY(-2px);
+}
+
 .theme-glow-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -600,7 +647,41 @@ li {
 
 .hero-actions {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.hero-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-main);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-fast);
+}
+
+.hero-stat-pill:hover {
+  border-color: rgba(20, 184, 166, 0.4);
+  transform: translateY(-2px);
+}
+
+.hero-stat-pill i {
+  color: var(--accent-teal);
+  font-size: 0.9rem;
 }
 
 /* Code visual card */
@@ -750,8 +831,8 @@ li {
 
 .about-highlights {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
   margin-top: 30px;
 }
 
@@ -1277,6 +1358,20 @@ span.cert-link {
   gap: 6px;
 }
 
+.cert-status-tag.verified {
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.cert-date.verified-badge {
+  color: #10b981;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
 /* ==========================================================================
    CONTACT SECTION
    ========================================================================== */
@@ -1462,7 +1557,7 @@ span.cert-link {
 }
 
 /* ==========================================================================
-   SERVICES OFFERED (FREELANCE SERVICES)
+   WHY HIRE ME / VALUE PROPOSITION SECTION
    ========================================================================== */
 .services-section {
   position: relative;
