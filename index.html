@@ -27,9 +27,8 @@
   <meta name="geo.placename" content="Catasauqua, Pennsylvania">
 
   <!-- Color Scheme & Theme Color -->
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#0a0e17" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8fafc">
 
   <!-- Open Graph / Facebook / LinkedIn / Discord -->
   <meta property="og:type" content="website">
@@ -235,7 +234,7 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css?v=2.0">
 </head>
-<body>
+<body class="light-mode">
   <script src="theme-init.js"></script>
 
   <!-- Ambient background glow elements -->
@@ -267,8 +266,8 @@
           <i class="fa-solid fa-file-arrow-down"></i>
           <span>Resume</span>
         </a>
-        <button class="theme-glow-btn" id="theme-btn" title="Toggle light/dark theme" aria-label="Toggle Theme Mode">
-          <i class="fa-solid fa-moon"></i>
+        <button class="theme-glow-btn" id="theme-btn" title="Toggle light/dark theme" aria-label="Toggle Theme Mode" style="color: #fbbf24;">
+          <i class="fa-solid fa-sun"></i>
         </button>
         <button class="mobile-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
           <i class="fa-solid fa-bars"></i>
@@ -281,9 +280,6 @@
   <section class="hero-section" id="hero">
     <div class="hero-container">
       <div class="hero-content">
-        <div class="hero-badge" id="hero-badge">
-          <span class="badge-dot"></span> 🎯 Seeking Entry-Level SOC Analyst &amp; Junior Pentester Roles
-        </div>
         <h1 class="hero-title" id="hero-heading">
           <span class="sr-only">Charlen Baloukjy — </span>Cybersecurity Specialist &amp; <span class="gradient-text">SOC Analyst</span>
         </h1>

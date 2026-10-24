@@ -4,8 +4,8 @@
   "description": "Portfolio of Charlen Baloukjy, Security+ Certified Cybersecurity Specialist & SOC Analyst.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0e17",
-  "theme_color": "#0a0e17",
+  "background_color": "#f8fafc",
+  "theme_color": "#f8fafc",
   "icons": [
     {
       "src": "assets/favicon-192x192.png",
